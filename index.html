@@ -1,12 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taniti Island</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where to stay</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-sans leading-normal tracking-normal bg-gray-900">
 <body>
     <div class="navbar bg-base-100">
         <div class="navbar-start">
@@ -15,7 +16,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </label>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a href="activites.html" >Things to do</a></li>
+              <li><a href="activites.html" >Things to do</a></li>
             <li><a href="food.html">Food</a></li>
             <li><a href="transportation.html">Getting Around</a></li>
             <li><a href="hotels.html">Places to Stay</a></li>
@@ -45,7 +46,7 @@
                           <div>
                               <p class=" ">Fill out this form with your name, email, and a quick message, and we will get back to you as soon as possible!</p>
                           </div>
-                          <form>
+                          <form action="https://formspree.io/f/xnqkwyak" method="POST">
                               <div class="mb-3">
                                   <label for="name" class="form-label">Name</label>
                                   <input name="name" type="text" class="form-control" id="name">
@@ -61,7 +62,7 @@
                               <button type="submit" class="btn btn-primary my-3">Submit</button>
                           </form>
                           <div>
-                              <p>Or send us an email at contact@taniti.com</p>
+                              <p>Or send us an email at Jslama911@gmail.com</p>
                           </div>
                       </div>
                 </div>
@@ -70,66 +71,77 @@
       </div>
     </div>
 
-    <div class="hero min-h-screen" style="background-image: url('images/beach.jpeg'); background-size: cover; background-position: center;">
+    <div class="hero min-h-screen" style="background-image: url('images/beach-hero.jpeg'); background-size: cover; background-position: center;">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
           <div class="max-w-md">
-            <h1 class="mb-5 text-5xl font-bold">Welcome to paradise!</h1>
-            <p class="mb-5">Taniti Island offers the perfect escape from the hustle and bustle of everyday life.</p>
+            <h1 class="mb-5 text-5xl font-bold">Choose Your Stay on Taniti Island</h1>
+            <p class="mb-5">Discover a range of hotel options to suit your budget and preferences.</p>
           </div>
         </div>
-      </div>
+    </div>
 
-      <div class="p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="card w-96 bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="images/hiking.jpeg" alt="Hiking" class="rounded-xl" />
+    <div class="p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Hotel Option 1 -->
+        <div class="card bg-base-100 shadow-xl">
+            <figure class="px-6 pt-6">
+              <img src="images/hotel-option1.jpeg" alt="Hotel Option 1" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Things to do</h2>
-              <p>From shopping, to hiking, to relaxing by the ocean. We have all the activities to make your vacation one to remember.</p>
+              <h2 class="card-title">Luxury Paradise Hotel</h2>
+              <p>Indulge in a lavish stay at our 5-star Luxury Paradise Hotel. Enjoy top-notch amenities and breathtaking ocean views.</p>
+              <p class="font-bold text-primary">Price: $500+/night</p>
               <div class="card-actions">
-                <a href="activites.html" ><button class="btn btn-primary">Learn more</button></a>
+                <a href=""><button class="btn btn-primary">Learn more</button></a>
               </div>
             </div>
-          </div>
-          <div class="card w-96 bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="images/resturant.jpeg" alt="resturant" class="rounded-xl" />
+        </div>
+
+        <!-- Hotel Option 2 -->
+        <div class="card bg-base-100 shadow-xl">
+            <figure class="px-6 pt-6">
+              <img src="images/hotel-option2.jpeg" alt="Hotel Option 2" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Food</h2>
-              <p>We have many different resturants that will make your mouth water!</p>
+              <h2 class="card-title">Seaside Villa</h2>
+              <p>Experience a peaceful stay at our Seaside Villa. Enjoy the serenity of the beach and cozy accommodations.</p>
+              <p class="font-bold text-primary">Price: $200+/night</p>
               <div class="card-actions">
-                <a href="food.html"><button class="btn btn-primary">Learn more</button></a>
+                <a href=""><button class="btn btn-primary">Learn more</button></a>
               </div>
             </div>
-          </div>
-          <div class="card w-96 bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="images/taxi2.jpeg" alt="Taxi" class="rounded-xl" />
+        </div>
+
+        <!-- Hotel Option 3 -->
+        <div class="card bg-base-100 shadow-xl">
+            <figure class="px-6 pt-6">
+              <img src="images/hotel-option3.jpeg" alt="Hotel Option 3" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Getting Around</h2>
-              <p>Weather you want a nice ride on a bike or prefer to be driven around we can help you get around the island.</p>
+              <h2 class="card-title">Island Breeze Resort</h2>
+              <p>Relax in a tropical paradise at Island Breeze Resort. Enjoy a blend of comfort and affordability.</p>
+              <p class="font-bold text-primary">Price: $100+/night</p>
               <div class="card-actions">
-                <a href="transportation.html"><button class="btn btn-primary">Learn more</button></a>
+                <a href=""><button class="btn btn-primary">Learn more</button></a>
               </div>
             </div>
-          </div>
-          <div class="card w-96 bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="images/hotel.jpeg" alt="Hotel" class="rounded-xl" />
+        </div>
+
+        <!-- Hotel Option 4 -->
+        <div class="card bg-base-100 shadow-xl">
+            <figure class="px-6 pt-6">
+              <img src="images/hostel.jpeg" alt="Hotel Option 4" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Places to stay</h2>
-              <p>We have many lodging accomadations that will suit your needs.</p>
+              <h2 class="card-title">Budget Beach Hostel</h2>
+              <p>Travel on a budget with our Budget Beach Hostel. Enjoy a fun and affordable stay near the beach.</p>
+              <p class="font-bold text-primary">Price: $50+/night</p>
               <div class="card-actions">
-                <a href="hotels.html"><button class="btn btn-primary">Learn more</button></a>
+                <a href=""><button class="btn btn-primary">Learn more</button></a>
               </div>
             </div>
-          </div>
-      </div>
+        </div>
+    </div>
 
       <footer class="footer items-center p-4 bg-neutral text-neutral-content">
         <aside class="items-center grid-flow-col">
